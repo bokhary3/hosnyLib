@@ -8,7 +8,7 @@ const { RNCardview } = NativeModules;
 if (Platform === "ios") {
     module.exports = {
         increment: function() {
-            RNCardview.increment();s
+            RNCardview.increment();
         }
     }
 }
