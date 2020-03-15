@@ -1,6 +1,14 @@
 
-import { NativeModules } from 'react-native';
+import { NativeModules, Platform } from 'react-native';
 
 const { RNCardview } = NativeModules;
 
-export default RNCardview;
+// export default RNCardview;
+
+if (Platform === "ios") {
+    module.exports = {
+        increment: function() {
+            RNCardview.increment();s
+        }
+    }
+}
